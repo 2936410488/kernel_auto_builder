@@ -64,7 +64,7 @@ jobs:
           cd kernel_oneplus_sm8150
           ZIP_NAME="Kernel-Caelum-${DEVICE_CODENAME}-${KERNEL_VERSION}-$(date +%d%m%Y).zip"
 
-          cp out/arch/arm64/boot/Image.gz anykernel/
+          cp out/arch/arm64/boot/Image-dtb anykernel/
 
           cd anykernel && zip -r9 $ZIP_NAME ./*
           mv $ZIP_NAME ../../
