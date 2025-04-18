@@ -20,7 +20,7 @@ jobs:
 
       - name: ⚡ Checkout kernel's sourcecode and clone submodules
         run: |
-          git clone --depth=1 https://github.com/tedomi2705/kernel_xiaomi_sdm845 -b vic-susfs
+          git clone --depth=1 https://github.com/2936410488/kernel_xiaomi_sdm845 -b vic-susfs
 
       - name: 📅 Export date of build
         run: |
@@ -30,7 +30,7 @@ jobs:
         run: |
           cd kernel_xiaomi_sdm845
           rm -rf KernelSU-Next
-          git clone --depth=1 https://github.com/KernelSU-Next/KernelSU-Next -b next-susfs
+          git clone --depth=1 https://github.com/ShirkNeko/SukiSU-Ultra.git -b susfs-dev
 
       - name: 📥 Clone AnyKernel3
         run: |
