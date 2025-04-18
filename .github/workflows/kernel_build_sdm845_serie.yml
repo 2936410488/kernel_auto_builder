@@ -345,12 +345,4 @@ jobs:
 
       - name: 📂 Checkout builder's sourcecode and get files
         uses: actions/checkout@v4
-
-      - name: 🚀 Notify people on Discord
-        env:
-          DEVICE_CODENAME: sdm845-serie
-          KERNEL_VERSION: 4.9
-          WEBHOOK: ${{ secrets.WEBHOOK }}
-          NAME: Kernel-Hayasaka-SUSFS-sdm845-serie-${{ env.KERNEL_VERSION }}-${{ env.DATE }}
-        run: |
-          python3 .github/webhook.py
+        
